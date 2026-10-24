@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSE Payment-Page</title>
+    <link id="tabPhoto" rel="icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <style>
+        #tabPhoto {
+            mix-blend-mode: multiply;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 25px;
+            background: #d6eef1;
+        }
+
+        .container form {
+            width: 700px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .container form .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .container form .row .col {
+            flex: 1 1 250px;
+        }
+
+        .col .title {
+            font-size: 20px;
+            color: rgb(237, 55, 23);
+            padding-bottom: 5px;
+        }
+
+        .col .inputBox {
+            margin: 15px 0;
+        }
+
+        .col .inputBox label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .col .inputBox input,
+        .col .inputBox select {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+
+        .col .inputBox input:focus,
+        .col .inputBox select:focus {
+            border: 1px solid #000;
+        }
+
+        .col .flex {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col .flex .inputBox {
+            flex: 1 1;
+            margin-top: 5px;
+        }
+
+        .col .inputBox img {
+            height: 34px;
+            margin-top: 5px;
+            filter: drop-shadow(0 0 1px #000);
+        }
+
+        .container form .submit_btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 17px;
+            background: rgb(1, 143, 34);
+            color: #fff;
+            margin-top: 5px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .container form .submit_btn:hover {
+            background: #3d17fb;
+        }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+
+            <div class="row">
+
+                <div class="col">
+                    <h3 class="title">
+                        Billing Address
+                    </h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                            Full Name:
+                        </label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="text" id="email" placeholder="Enter email address" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="address">
+                            Address:
+                        </label>
+                        <input type="text" id="address" placeholder="Enter address" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="city">
+                            City:
+                        </label>
+                        <input type="text" id="city" placeholder="Enter city" required>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <label for="state">
+                                State:
+                            </label>
+                            <input type="text" id="state" placeholder="Enter state" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="zip">
+                                Zip Code:
+                            </label>
+                            <input type="number" id="zip" placeholder="123 456" required>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                            Card Accepted:
+                        </label>
+                        <div class="row" style="height:38px;">
+                            <!-- paypal -->
+                            <div class="col-3">
+                                <svg fill="#4f3bb3;" xmlns="http://www.w3.org/2000/svg" width="35" height="30"
+                                    fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z" />
+                                </svg>
+                            </div>
+                            <!-- MasterCard -->
+                            <div class="col-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 256 199">
+                                    <path
+                                        d="M46.54 198.011V184.84c0-5.05-3.074-8.342-8.343-8.342c-2.634 0-5.488.878-7.464 3.732c-1.536-2.415-3.731-3.732-7.024-3.732c-2.196 0-4.39.658-6.147 3.073v-2.634h-4.61v21.074h4.61v-11.635c0-3.731 1.976-5.488 5.05-5.488c3.072 0 4.61 1.976 4.61 5.488v11.635h4.61v-11.635c0-3.731 2.194-5.488 5.048-5.488c3.074 0 4.61 1.976 4.61 5.488v11.635zm68.271-21.074h-7.463v-6.366h-4.61v6.366h-4.171v4.17h4.17v9.66c0 4.83 1.976 7.683 7.245 7.683c1.976 0 4.17-.658 5.708-1.536l-1.318-3.952c-1.317.878-2.853 1.098-3.951 1.098c-2.195 0-3.073-1.317-3.073-3.513v-9.44h7.463zm39.076-.44c-2.634 0-4.39 1.318-5.488 3.074v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.536-5.488 4.39-5.488c.878 0 1.976.22 2.854.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22m-59.052 2.196c-2.196-1.537-5.269-2.195-8.562-2.195c-5.268 0-8.78 2.634-8.78 6.805c0 3.513 2.634 5.488 7.244 6.147l2.195.22c2.415.438 3.732 1.097 3.732 2.195c0 1.536-1.756 2.634-4.83 2.634s-5.488-1.098-7.025-2.195l-2.195 3.512c2.415 1.756 5.708 2.634 9 2.634c6.147 0 9.66-2.853 9.66-6.805c0-3.732-2.854-5.708-7.245-6.366l-2.195-.22c-1.976-.22-3.512-.658-3.512-1.975c0-1.537 1.536-2.415 3.951-2.415c2.635 0 5.269 1.097 6.586 1.756zm122.495-2.195c-2.635 0-4.391 1.317-5.489 3.073v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.537-5.488 4.39-5.488c.879 0 1.977.22 2.855.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22m-58.833 10.976c0 6.366 4.39 10.976 11.196 10.976c3.073 0 5.268-.658 7.463-2.414l-2.195-3.732c-1.756 1.317-3.512 1.975-5.488 1.975c-3.732 0-6.366-2.634-6.366-6.805c0-3.951 2.634-6.586 6.366-6.805c1.976 0 3.732.658 5.488 1.976l2.195-3.732c-2.195-1.757-4.39-2.415-7.463-2.415c-6.806 0-11.196 4.61-11.196 10.976m42.588 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976s4.61 10.976 10.537 10.976c3.073 0 5.269-1.097 6.586-3.073v2.634h4.61zm-16.904 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805m-55.1-10.976c-6.147 0-10.538 4.39-10.538 10.976s4.39 10.976 10.757 10.976c3.073 0 6.147-.878 8.562-2.853l-2.196-3.293c-1.756 1.317-3.951 2.195-6.146 2.195c-2.854 0-5.708-1.317-6.367-5.05h15.587v-1.755c.22-6.806-3.732-11.196-9.66-11.196m0 3.951c2.853 0 4.83 1.757 5.268 5.05h-10.976c.439-2.854 2.415-5.05 5.708-5.05m114.372 7.025v-18.879h-4.61v10.976c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976s4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61zm-16.903 0c0-3.732 2.414-6.805 6.366-6.805c3.732 0 6.366 2.854 6.366 6.805c0 3.732-2.634 6.805-6.366 6.805c-3.952-.22-6.366-3.073-6.366-6.805m-154.107 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976s4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61zm-17.123 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805" />
+                                    <path fill="#ff5f00" d="M93.298 16.903h69.15v124.251h-69.15z" />
+                                    <path fill="#eb001b"
+                                        d="M97.689 79.029c0-25.245 11.854-47.637 30.074-62.126C114.373 6.366 97.47 0 79.03 0C35.343 0 0 35.343 0 79.029s35.343 79.029 79.029 79.029c18.44 0 35.343-6.366 48.734-16.904c-18.22-14.269-30.074-36.88-30.074-62.125" />
+                                    <path fill="#f79e1b"
+                                        d="M255.746 79.029c0 43.685-35.343 79.029-79.029 79.029c-18.44 0-35.343-6.366-48.734-16.904c18.44-14.488 30.075-36.88 30.075-62.125s-11.855-47.637-30.075-62.126C141.373 6.366 158.277 0 176.717 0c43.686 0 79.03 35.563 79.03 79.029" />
+                                </svg>
+                            </div>
+                            <!-- Ameriacan Express -->
+                            <div class="col-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M16.015 14.378c0-.32-.135-.496-.344-.622c-.21-.12-.464-.135-.81-.135h-1.543v2.82h.675v-1.027h.72c.24 0 .39.024.478.125c.12.13.104.38.104.55v.35h.66v-.555c-.002-.25-.017-.376-.108-.516a.75.75 0 0 0-.33-.234l.02-.008a.78.78 0 0 0 .48-.747zm-.87.407l-.028-.002c-.09.053-.195.058-.33.058h-.81v-.63h.824c.12 0 .24 0 .33.05a.27.27 0 0 1 .15.255c0 .12-.045.215-.134.27zm5.152 1.052H19v.6h1.304c.676 0 1.05-.278 1.05-.884c0-.28-.066-.448-.187-.582c-.153-.133-.392-.193-.73-.207l-.376-.015c-.104 0-.18 0-.255-.03a.21.21 0 0 1-.15-.21c0-.09.017-.166.09-.21a.5.5 0 0 1 .272-.06h1.23v-.602h-1.35c-.704 0-.958.437-.958.84c0 .9.776.855 1.407.87c.104 0 .18.015.225.06c.046.03.082.106.082.18c0 .077-.035.15-.08.18c-.06.053-.15.07-.277.07M0 0v10.096L.81 8.22h1.75l.225.464V8.22h2.043l.45 1.02l.437-1.013h6.502c.295 0 .56.057.756.236v-.23h1.787v.23c.307-.17.686-.23 1.12-.23h2.606l.24.466v-.466h1.918l.254.465v-.466h1.858v3.948H20.87l-.36-.6v.585h-2.353l-.256-.63h-.583l-.27.614h-1.213c-.48 0-.84-.104-1.08-.24v.24h-2.89v-.884c0-.12-.03-.12-.105-.135h-.105v1.036H6.067v-.48l-.21.48H4.69l-.202-.48v.465H2.235l-.256-.624H1.4l-.256.624H0V24h23.786v-7.108c-.27.135-.613.18-.973.18H21.09v-.255c-.21.165-.57.255-.914.255H14.71v-.9c0-.12-.018-.12-.12-.12h-.075v1.022h-1.8v-1.066c-.298.136-.643.15-.928.136h-.214v.915h-2.18l-.54-.617l-.57.6H4.742v-3.93h3.61l.518.602l.554-.6h2.412c.28 0 .74.03.942.225v-.24h2.177c.202 0 .644.045.903.225v-.24h3.265v.24c.163-.164.508-.24.803-.24h1.89v.24c.194-.15.464-.24.84-.24h1.176V0zm21.156 14.955l.01.016c.01.01.024.01.032.02zm2.672-1.873h.065v.555h-.065zm.037 1.948v-.005c-.03-.025-.046-.048-.075-.07c-.15-.153-.39-.215-.764-.225l-.36-.012a.9.9 0 0 1-.27-.03a.21.21 0 0 1-.15-.21q0-.136.09-.204c.076-.045.15-.05.27-.05h1.223v-.588h-1.283c-.69 0-.96.437-.96.84c0 .9.78.855 1.41.87c.104 0 .18.015.224.06c.046.03.076.106.076.18c0 .07-.034.138-.09.18c-.045.056-.136.07-.27.07h-1.288v.605h1.287c.42 0 .734-.118.9-.36h.03c.09-.134.135-.3.135-.523c0-.24-.045-.39-.135-.526zm-5.268-.822v-.583h-2.235v2.833h2.235v-.585h-1.57v-.57h1.533v-.584h-1.532v-.51M13.51 8.787h.685V11.6h-.684zm-.384.756l-.007.006c0-.314-.13-.5-.34-.624c-.217-.125-.47-.135-.81-.135H10.43v2.82h.674v-1.034h.72c.24 0 .39.03.487.12c.122.136.107.378.107.548v.354h.677v-.553c0-.25-.016-.375-.11-.516a.8.8 0 0 0-.33-.237c.172-.07.472-.3.472-.75zm-.855.396h-.015c-.09.054-.195.056-.33.056H11.1v-.623h.825c.12 0 .24.004.33.05c.09.04.15.128.15.25s-.047.22-.134.266zm3.649-.566h.632v-.6h-.644c-.464 0-.804.105-1.02.33c-.286.3-.362.69-.362 1.11c0 .512.123.833.36 1.074c.232.238.645.31.97.31h.78l.255-.627h1.39l.262.627h1.36v-2.11l1.272 2.11h.95l.002.002V8.786h-.684v1.963l-1.18-1.96h-1.02V11.4L18.11 8.744h-1.004l-.943 2.22h-.3c-.177 0-.362-.03-.468-.134c-.125-.15-.186-.36-.186-.662c0-.285.08-.51.194-.63c.133-.135.272-.165.516-.165zm1.668-.108l.464 1.118v.002h-.93zM2.38 10.97l.254.628H4V9.393l.972 2.205h.584l.973-2.202l.015 2.202h.69v-2.81H6.118l-.807 1.904l-.876-1.905H3.343v2.663L2.205 8.787h-.997L.01 11.597h.72l.26-.626zm-.688-1.705l.46 1.118l-.003.002h-.915l.457-1.12zm10.164 4.355H9.714l-.85.923l-.825-.922H5.346v2.82H8l.855-.932l.824.93h1.302v-.94h.838c.6 0 1.17-.164 1.17-.945l-.006-.003c0-.78-.598-.93-1.128-.93zM7.67 15.853l-.014-.002H6.02v-.557h1.47v-.574H6.02v-.51H7.7l.733.82l-.764.824zm2.642.33l-1.03-1.147l1.03-1.108v2.253zm1.553-1.258h-.885v-.717h.885c.24 0 .42.098.42.344c0 .243-.15.372-.42.372zM9.967 9.373v-.586H7.73V11.6h2.237v-.58H8.4v-.564h1.527V9.88H8.4v-.507" />
+                                </svg>
+                            </div>
+                            <!-- Visa -->
+                            <div class="col-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="3.09em" height="1em" width="35"
+                                    height="30" viewBox="0 0 256 83">
+                                    <defs>
+                                        <linearGradient id="logosVisa0" x1="45.974%" x2="54.877%" y1="-2.006%"
+                                            y2="100%">
+                                            <stop offset="0%" stop-color="#222357" />
+                                            <stop offset="100%" stop-color="#254aa5" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#logosVisa0)"
+                                        d="M132.397 56.24c-.146-11.516 10.263-17.942 18.104-21.763c8.056-3.92 10.762-6.434 10.73-9.94c-.06-5.365-6.426-7.733-12.383-7.825c-10.393-.161-16.436 2.806-21.24 5.05l-3.744-17.519c4.82-2.221 13.745-4.158 23-4.243c21.725 0 35.938 10.724 36.015 27.351c.085 21.102-29.188 22.27-28.988 31.702c.069 2.86 2.798 5.912 8.778 6.688c2.96.392 11.131.692 20.395-3.574l3.636 16.95c-4.982 1.814-11.385 3.551-19.357 3.551c-20.448 0-34.83-10.87-34.946-26.428m89.241 24.968c-3.967 0-7.31-2.314-8.802-5.865L181.803 1.245h21.709l4.32 11.939h26.528l2.506-11.939H256l-16.697 79.963zm3.037-21.601l6.265-30.027h-17.158zm-118.599 21.6L88.964 1.246h20.687l17.104 79.963zm-30.603 0L53.941 26.782l-8.71 46.277c-1.022 5.166-5.058 8.149-9.54 8.149H.493L0 78.886c7.226-1.568 15.436-4.097 20.41-6.803c3.044-1.653 3.912-3.098 4.912-7.026L41.819 1.245H63.68l33.516 79.963z"
+                                        transform="matrix(1 0 0 -1 0 82.668)" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Name On Card:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Enter card name" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardNum">
+                            Credit Card Number:
+                        </label>
+                        <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Exp Month:</label>
+                        <select name="" id="">
+                            <option value="">Choose month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Exp Year:</label>
+                            <select name="" id="">
+                                <option value="">Choose Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" placeholder="1234" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <button type="submit" class="submit_btn">Proceed to Checkout</button>
+        </form>
+
+    </div>
+    <script>
+        let cardNumInput =
+            document.querySelector('#cardNum')
+
+        cardNumInput.addEventListener('keyup', () => {
+            let cNumber = cardNumInput.value
+            cNumber = cNumber.replace(/\s/g, "")
+
+            if (Number(cNumber)) {
+                cNumber = cNumber.match(/.{1,4}/g)
+                cNumber = cNumber.join(" ")
+                cardNumInput.value = cNumber
+            }
+        })
+
+    </script>
+</body>
+
+</html>
